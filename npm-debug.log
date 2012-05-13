@@ -1,0 +1,42 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'pylint' ]
+info using npm@1.1.0-beta-4
+info using node@v0.6.6
+verbose config file /Users/robbcasanova/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose into /Users/robbcasanova/Documents/python [ 'pylint' ]
+verbose cache add pylint
+verbose cache add [ 'pylint', null ]
+silly cache add: name, spec, args [ undefined, 'pylint', [ 'pylint', null ] ]
+verbose parsed url { pathname: 'pylint', path: 'pylint', href: 'pylint' }
+verbose addNamed [ 'pylint', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'pylint', '', false ]
+verbose raw, before any munging pylint
+verbose url resolving [ 'https://registry.npmjs.org/', './pylint' ]
+verbose url resolved https://registry.npmjs.org/pylint
+http GET https://registry.npmjs.org/pylint
+http 404 https://registry.npmjs.org/pylint
+silly get cb [ 304, undefined ]
+silly name, range, hasData 2 [ 'pylint', '', true ]
+ERR! TypeError: Object.keys called on non-object
+ERR!     at Function.keys (native)
+ERR!     at next_ (/usr/local/lib/node_modules/npm/lib/cache.js:428:34)
+ERR!     at next (/usr/local/lib/node_modules/npm/lib/cache.js:415:44)
+ERR!     at /usr/local/lib/node_modules/npm/lib/cache.js:408:5
+ERR!     at Object.saved [as oncomplete] (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/get.js:147:7)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 10.8.0
+ERR! command "node" "/usr/local/bin/npm" "install" "pylint"
+ERR! cwd /Users/robbcasanova/Documents/python
+ERR! node -v v0.6.6
+ERR! npm -v 1.1.0-beta-4
+ERR! type obj_ctor_property_non_object
+ERR! arguments [ 'keys' ]
+ERR! message Object.keys called on non-object
+verbose exit [ 1, true ]
